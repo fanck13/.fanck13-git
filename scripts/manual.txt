@@ -1,0 +1,15 @@
+new : Create a new branch. 
+    usgae: git new <branch-name>
+
+==========================================================
+
+cmd-ext-info: Print custom command info.
+    usage: git cmd-ext-info
+    
+==========================================================
+
+delete-branches: Use wildcards to delete matched branches
+    usage: git delete-branches <branch-names-wildcards>
+
+==========================================================
+

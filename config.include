@@ -1,0 +1,25 @@
+[alias]
+    st = status
+    br = branch
+    nb = checkout -b
+	last = log -1
+    search-changes = log -S
+    file-history = log -p
+    ls-commit-tree = ls-tree --name-only -r
+    reset-first-commit = update-ref -d HEAD
+    list-merged-branch = branch --merged master
+    delete-branch = branch -d
+    delete-remote-branch = push origin --delete
+    rename-branch = branch -m 
+    nearest-tag =  describe --tags --abbrev=0
+    delete-remote-tag = push origin --delete tag 
+    clear = checkout .
+    recover-file = git rev-list -n 1 HEAD -- 
+    modify-author = git commit --amend --author=
+    modify-remote-url = git remote set-url origin 
+    changes-in = whatchanged --since=
+    tracked-files =  ls-files -t
+    untracked-files = ls-files --others
+    show-ignored =  ls-files --others -i --exclude-standard
+    commit-history = log --pretty=oneline --graph --decorate --all
+    branches-ordered-by-last-commit = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
